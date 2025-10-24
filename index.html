@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>신부측 하객 대절버스 안내 | inv0401b</title>
+  <!-- 검색 차단 -->
+  <meta name="robots" content="noindex, nofollow" />
+  <!-- iOS 전화번호 자동링크 -->
+  <meta name="format-detection" content="telephone=no" />
+  <style>
+    :root {
+      --bg: #fafafa;
+      --card: #ffffff;
+      --text: #111827; /* gray-900 */
+      --muted: #4b5563; /* gray-600 */
+      --brand: #2563eb; /* blue-600 */
+      --accent: #059669; /* emerald-600 */
+      --danger: #dc2626; /* red-600 */
+      --border: #e5e7eb; /* gray-200 */
+      --shadow: 0 6px 20px rgba(0,0,0,.06);
+    }
+    html, body { height: 100%; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Noto Sans KR, Apple SD Gothic Neo, "Malgun Gothic", sans-serif; margin:0; background:var(--bg); color:var(--text); }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 16px; }
+    header { text-align:center; padding: 20px 8px 8px; }
+    header .badge { display:inline-block; padding:6px 10px; border-radius:999px; font-size:12px; color:#fff; background:var(--brand); letter-spacing:.02em; }
+    h1 { margin:10px 0 2px; font-size: 26px; line-height:1.25; }
+    .subtitle { color:var(--muted); font-size:14px; }
+
+    .card { background:var(--card); border:1px solid var(--border); border-radius:16px; box-shadow:var(--shadow); padding:16px; margin:14px 0; }
+    .card h2 { font-size:20px; margin:0 0 10px; }
+    .grid { display:grid; grid-template-columns: 1fr; gap:10px; }
+
+    .row { display:flex; align-items:flex-start; gap:10px; padding:10px 0; border-top:1px dashed var(--border); }
+    .row:first-child { border-top:0; }
+    .k { width:96px; flex:0 0 96px; color:var(--muted); font-size:14px; }
+    .v { flex:1; font-size:16px; line-height:1.5; }
+
+    .btns { display:flex; flex-wrap:wrap; gap:10px; margin-top:8px; }
+    .btn { display:inline-flex; align-items:center; justify-content:center; padding:12px 14px; border-radius:12px; border:1px solid var(--border); background:#fff; box-shadow:var(--shadow); font-size:16px; text-decoration:none; color:var(--text); }
+    .btn.primary { background:var(--brand); color:#fff; border-color:transparent; }
+    .btn.success { background:var(--accent); color:#fff; border-color:transparent; }
+
+    .timeline { position:relative; margin:4px 0; padding-left:22px; }
+    .timeline::before { content:""; position:absolute; left:10px; top:6px; bottom:6px; width:2px; background:var(--border); }
+    .t-item { position:relative; padding:12px 8px 12px 12px; border-radius:12px; background:#fff; border:1px solid var(--border); margin:8px 0; }
+    .t-item::before { content:""; position:absolute; left:-16px; top:18px; width:10px; height:10px; border-radius:50%; background:var(--brand); box-shadow:0 0 0 4px #e6efff; }
+    .t-time { font-weight:700; margin-bottom:6px; }
+    .t-place { margin:2px 0; }
+    .t-note { color:var(--muted); font-size:14px; }
+
+    .sticky-call { position:sticky; bottom:12px; z-index:50; }
+
+    footer { text-align:center; color:var(--muted); font-size:12px; padding:20px 8px 40px; }
+
+    /* 큰 글씨 토글 지원 */
+    .a11y { display:flex; gap:8px; justify-content:flex-end; margin:6px 0 0; }
+    .a11y button { padding:8px 10px; border-radius:10px; border:1px solid var(--border); background:#fff; font-size:14px; }
+
+    @media (min-width: 560px) {
+      h1 { font-size:30px; }
+      .k { width:140px; flex-basis:140px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="badge">🚌 신부측 하객 대절버스</div>
+      <h1>라시따 시어터 예식 <span aria-hidden="true">버스 안내</span></h1>
+      <div class="subtitle">성용모 · 유수영의 차녀 <strong>성민경</strong> 결혼식</div>
+      <div class="a11y" aria-label="글자 크기 조절">
+        <button type="button" onclick="setFont(1)">기본 글씨</button>
+        <button type="button" onclick="setFont(1.15)">크게</button>
+        <button type="button" onclick="setFont(1.3)">아주 크게</button>
+      </div>
+    </header>
+
+    <!-- 핵심 정보 -->
+    <section class="card" aria-labelledby="basic-info">
+      <h2 id="basic-info">기본 안내</h2>
+      <div class="row"><div class="k">출발일</div><div class="v"><strong>2026년 1월 4일 (일)</strong></div></div>
+      <div class="row"><div class="k">운송사</div><div class="v">대성관광</div></div>
+      <div class="row"><div class="k">차량번호</div><div class="v"><code>경북75바7118</code> <button class="btn" onclick="copyText('경북75바7118')" aria-label="차량번호 복사">복사</button></div></div>
+      <div class="row"><div class="k">기사님</div><div class="v">박창규 <a class="btn" href="tel:01056145464" aria-label="기사님께 전화"><span aria-hidden="true">📞</span>&nbsp;전화</a></div></div>
+      <div class="row"><div class="k">인솔자</div><div class="v">유영팔 <a class="btn" href="tel:01025086082" aria-label="인솔자께 전화"><span aria-hidden="true">📞</span>&nbsp;전화</a></div></div>
+    </section>
+
+    <!-- 가시는 길 -->
+    <section class="card" aria-labelledby="go">
+      <h2 id="go">가는 편 (청도 → 대구 → 서울 양재 라시따 시어터)</h2>
+      <div class="timeline" role="list">
+        <div class="t-item" role="listitem">
+          <div class="t-time">오전 8:00 출발</div>
+          <div class="t-place"><strong>청도경찰서 앞</strong></div>
+          <div class="btns">
+            <a class="btn" href="https://maps.google.com/?q=%EC%B2%AD%EB%8F%84%EA%B2%BD%EC%B0%B0%EC%84%9C" target="_blank" rel="noreferrer">Google 지도</a>
+            <a class="btn" href="https://map.naver.com/v5/search/%EC%B2%AD%EB%8F%84%20%EA%B2%BD%EC%B0%B0%EC%84%9C" target="_blank" rel="noreferrer">네이버 지도</a>
+            <a class="btn" href="https://map.kakao.com/?q=%EC%B2%AD%EB%8F%84%20%EA%B2%BD%EC%B0%B0%EC%84%9C" target="_blank" rel="noreferrer">카카오 지도</a>
+          </div>
+          <div class="t-note">시간 여유를 두고 대기 부탁드립니다.</div>
+        </div>
+        <div class="t-item" role="listitem">
+          <div class="t-time">오전 8:30 경유</div>
+          <div class="t-place"><strong>대구 월드컵경기장 2주차장 앞 도로변</strong></div>
+          <div class="btns">
+            <a class="btn" href="https://maps.google.com/?q=%EB%8C%80%EA%B5%AC%20%EC%9B%94%EB%93%9C%EC%BB%B5%EA%B2%BD%EA%B8%B0%EC%9E%A5%202%EC%A3%BC%EC%B0%A8%EC%9E%A5" target="_blank" rel="noreferrer">Google 지도</a>
+            <a class="btn" href="https://map.naver.com/v5/search/%EB%8C%80%EA%B5%AC%20%EC%9B%94%EB%93%9C%EC%BB%B5%EA%B2%BD%EA%B8%B0%EC%9E%A5%202%EC%A3%BC%EC%B0%A8%EC%9E%A5" target="_blank" rel="noreferrer">네이버 지도</a>
+            <a class="btn" href="https://map.kakao.com/?q=%EB%8C%80%EA%B5%AC%20%EC%9B%94%EB%93%9C%EC%BB%B5%EA%B2%BD%EA%B8%B0%EC%9E%A5%202%EC%A3%BC%EC%B0%A8%EC%9E%A5" target="_blank" rel="noreferrer">카카오 지도</a>
+          </div>
+          <div class="t-note">정확한 탑승을 위해 도로변 정차 위치를 미리 확인해주세요.</div>
+        </div>
+        <div class="t-item" role="listitem">
+          <div class="t-time">도착</div>
+          <div class="t-place"><strong>서울 양재 라시따 시어터</strong></div>
+          <div class="btns">
+            <a class="btn" href="https://maps.google.com/?q=%EB%9D%BC%EC%8B%9C%EB%94%B0%20%EC%8B%9C%EC%96%B4%ED%84%B0%20%EC%96%91%EC%9E%AC" target="_blank" rel="noreferrer">Google 지도</a>
+            <a class="btn" href="https://map.naver.com/v5/search/%EB%9D%BC%EC%8B%9C%EB%94%B0%20%EC%8B%9C%EC%96%B4%ED%84%B0%20%EC%96%91%EC%9E%AC" target="_blank" rel="noreferrer">네이버 지도</a>
+            <a class="btn" href="https://map.kakao.com/?q=%EB%9D%BC%EC%8B%9C%EB%94%B0%20%EC%8B%9C%EC%96%B4%ED%84%B0%20%EC%96%91%EC%9E%AC" target="_blank" rel="noreferrer">카카오 지도</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 돌아가는 길 -->
+    <section class="card" aria-labelledby="back">
+      <h2 id="back">돌아가는 편 (서울 양재 → 대구 → 청도)</h2>
+      <div class="timeline" role="list">
+        <div class="t-item" role="listitem">
+          <div class="t-time">오후 4:00 출발</div>
+          <div class="t-place"><strong>라시따 시어터 하차 지점</strong></div>
+          <div class="t-note">예식 진행 상황에 따라 약간 변동될 수 있습니다.</div>
+        </div>
+        <div class="t-item" role="listitem">
+          <div class="t-time">경유</div>
+          <div class="t-place"><strong>대구 월드컵경기장 2주차장 앞 도로변</strong></div>
+        </div>
+        <div class="t-item" role="listitem">
+          <div class="t-time">도착</div>
+          <div class="t-place"><strong>청도경찰서</strong></div>
+        </div>
+      </div>
+      <div class="sticky-call">
+        <div class="btns">
+          <a class="btn primary" href="tel:01056145464"><span aria-hidden="true">📞</span>&nbsp;기사님께 전화 (박창규)</a>
+          <a class="btn success" href="tel:01025086082"><span aria-hidden="true">📞</span>&nbsp;인솔자께 전화 (유영팔)</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 유의사항 -->
+    <section class="card" aria-labelledby="notes">
+      <h2 id="notes">안내 및 유의사항</h2>
+      <ul style="margin:6px 0 0 18px; line-height:1.7; padding:0;">
+        <li>출발 10분 전까지 탑승 장소에 도착해 주세요.</li>
+        <li>짐 적재 시 통로를 막지 않도록 정리 부탁드립니다.</li>
+        <li>탑승 전 <strong>차량번호(경북75바7118)</strong>를 꼭 확인해 주세요.</li>
+        <li>길 찾기 어려우시면 기사님 또는 인솔자에게 연락 주세요.</li>
+      </ul>
+    </section>
+
+    <footer>
+      <div>inv0401b · 검색 차단 설정 적용됨</div>
+      <div style="margin-top:6px;">© 2026 성민경 결혼식 신부측 버스 안내</div>
+    </footer>
+  </div>
+
+  <script>
+    function copyText(t){
+      navigator.clipboard.writeText(t).then(()=>{
+        alert('복사됨: ' + t);
+      }).catch(()=>{
+        prompt('복사가 안 될 경우 직접 복사해 주세요:', t);
+      });
+    }
+    function setFont(scale){
+      document.documentElement.style.fontSize = (16*scale) + 'px';
+    }
+  </script>
+</body>
+</html>
